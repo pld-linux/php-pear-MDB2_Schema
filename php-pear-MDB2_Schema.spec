@@ -8,7 +8,7 @@ Summary:	%{_pearname} - XML based database schema manager
 Summary(pl):	%{_pearname} - oparty na XML zarz±dca schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,7 +18,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-PEAR >= 1:1.0b1
-Requires:	php-pear-MDB2 >= 2.0.0beta4
+Requires:	php-pear-MDB2 >= 1:2.0.0-0.beta4
 Requires:	php-pear-XML_Parser
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
