@@ -17,8 +17,8 @@ URL:		http://pear.php.net/package/MDB2_Schema/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1:1.0b1
 Requires:	php-pear-MDB2 >= 1:2.0.0-0.beta4
+Requires:	php-pear-PEAR-core >= 1:1.0b1
 Requires:	php-pear-XML_Parser
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
