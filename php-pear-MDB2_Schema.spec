@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - XML based database schema manager
-Summary(pl):	%{_pearname} - oparty na XML zarz±dca schematów baz danych
+Summary(pl.UTF-8):   %{_pearname} - oparty na XML zarzÄ…dca schematÃ³w baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.6.0
 Release:	1
@@ -37,18 +37,18 @@ compatible with both PEAR::MDB and Metabase.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-PEAR::MDB2_Schema pozwala u¿ytkownikowi na zarz±dzanie niezale¿nymi od
-RDBMS XMLowymi plikami schema, które mog± byæ u¿yte do tworzenia,
-modyfikacji lub usuwania baz oraz wprowadzania danych. Mo¿liwy jest
-tak¿e reverse engineering schematów baz z ju¿ istniej±cych baz. Format
-jest kompatybilny zarówno z PEAR::MDB jak i Metabase.
+%description -l pl.UTF-8
+PEAR::MDB2_Schema pozwala uÅ¼ytkownikowi na zarzÄ…dzanie niezaleÅ¼nymi od
+RDBMS XMLowymi plikami schema, ktÃ³re mogÄ… byÄ‡ uÅ¼yte do tworzenia,
+modyfikacji lub usuwania baz oraz wprowadzania danych. MoÅ¼liwy jest
+takÅ¼e reverse engineering schematÃ³w baz z juÅ¼ istniejÄ…cych baz. Format
+jest kompatybilny zarÃ³wno z PEAR::MDB jak i Metabase.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -57,7 +57,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
