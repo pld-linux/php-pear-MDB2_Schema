@@ -1,15 +1,13 @@
 # TODO
 # - do something with /usr/share/pear/www/mdb2_schematool
-%include	/usr/lib/rpm/macros.php
-%define		_class		MDB2
-%define		_subclass	Schema
 %define		_status		beta
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	MDB2_Schema
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - XML based database schema manager
 Summary(pl.UTF-8):	%{_pearname} - oparty na XML zarządca schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.8.5
-Release:	3
+Release:	4
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,7 +16,7 @@ URL:		http://pear.php.net/package/MDB2_Schema/
 BuildRequires:	php-pear-PEAR >= 1:1.7.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Requires:	php-pear-MDB2 >= 1:2.5.0-0.b1
 Requires:	php-pear-XML_Parser >= 1.2.8
@@ -77,7 +75,7 @@ fi
 %doc install.log optional-packages.txt
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/%{_subclass}.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/MDB2/Schema.php
+%{php_pear_dir}/MDB2/Schema
 
 %{_examplesdir}/%{name}-%{version}
