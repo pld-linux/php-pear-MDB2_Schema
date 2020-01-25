@@ -2,7 +2,6 @@
 # - do something with /usr/share/pear/www/mdb2_schematool
 %define		_status		beta
 %define		_pearname	MDB2_Schema
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - XML based database schema manager
 Summary(pl.UTF-8):	%{_pearname} - oparty na XML zarządca schematów baz danych
 Name:		php-pear-%{_pearname}
